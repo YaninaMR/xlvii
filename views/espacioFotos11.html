@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Section Fotos</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta http-equiv="content-type" content="text/html;UTF-8">
+  <meta http-equiv="cache-control" content="cache">
+  <meta http-equiv="content-language" content="es">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+   
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:300,400,500,600,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="../css/galeryfriends.css">
+  <link rel="stylesheet" href="../css/profile.css">
+  <link rel="stylesheet" href="../css/register.css">
+   <link rel="stylesheet" href="../css/tweet-main.css">
+</head>
+
+<body>
+   
+   <!---->
+  <div class="modal modal-fullscreen" id="modal-lg">
+        <div class="modal-content l10 m10 s10 offset-l1 offset-m1 offset-s1">
+		       <a href="#!" class="right modal-close waves-effect waves-green"><i class="material-icons">close</i></a>
+		       <h5 id="title"></h5>
+            <img src="" alt="" id="img">  
+            <div class="sliderimgs">     
+		         <a id="back" class="btn-left text-primary-color left"><i class="material-icons" aria-hidden="true">chevron_left</i></a>
+             <a id="next" class="btn-right  text-primary-color right"><i class="material-icons" aria-hidden="true">chevron_right</i></a>
+            </div>
+        </div>
+  </div>
+
+   <nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+      <a href="#" class="brand-logo">
+          <img src="../assets/logo/flower.png" class="logo-img responsive-img" alt="">
+      </a>      
+      <button class="btn-out green right" id="signout">salir</button>
+      
+    </div>
+  </nav> 
+
+  <div class="main main-style">
+    <div class="row">
+      <div class="col s12 m12 l12"> 
+        <div class="card horizontal">
+          <p>el foto del usuario</p>
+        <div id="user-name">
+        </div>
+          <p>el anexo del usuario</p> 
+        <div id="user-annex">
+        </div>     
+        <div class="card-image">
+          <img src="../assets/img/sissor.png">
+        </div>
+      </div>
+         <!--enviroment -->   
+     
+        <div class="arephotos">        
+        </div>    
+       <div class="section">
+          <div class="row">
+            <div class="s12 l12 m12">
+              <div class="s3 l4 m4 photo-user-textarea" id="user-photo"></div>
+              <div class= "s7 l6 m6" id="post">          
+                <textarea id="text" placeholder="¿Qué esta pasando?"></textarea>
+                <button id="btn" type="button" class="red" name="btn">publicar</button>
+                <span id="counter" class="counter"></span>      
+              </div>
+            </div>           
+          </div>
+          <div class="row">     
+            <div class="col l12 s12 m12 container-tweets" id="container-tweets">
+                
+            </div>
+          </div>
+         <div class="row">
+           <div class="col s12 m12 l12">              
+              <div class="carousel">
+                <h5 class="center ">Candidatos</h5>
+                <a class="carousel-item" href="#one!"><img src="../assets/img/img-index/flower.png"></a>
+                <a class="carousel-item" href="#two!"><img src="../assets/img/FA2.jpg"></a>
+                <a class="carousel-item" href="#three!"><img src="../assets/img/FA1.jpg"></a>
+                <a class="carousel-item" href="#four!"><img src="https://lorempixel.com/250/250/nature/4"></a>
+                <a class="carousel-item" href="#five!"><img src="../assets/img/img-index/flower.png"></a>
+              </div>
+           </div>
+         </div> 
+       </div>
+       <footer class="page-footer green">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Frente Amplio</h5>
+                <p class="grey-text text-lighten-4">Partido Politico Frente Amplio</p>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2018 Copyright Ricardo Mercado Espinal
+            </div>
+          </div>
+        </footer>  
+       <div class="section">
+      
+       </div>
+       
+
+        <p>el foto del usuario</p>
+      	  <div id="user-photo">
+       	  </div>
+        <p>el nombre del usuario</p> 
+      	  <div id="user-name">
+      	  </div>
+        <p>el anexo del usuario</p> 
+          <div id="user-annex">
+          </div>
+       
+    
+   
+ 
+  <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js">
+  </script>
+  
+
+  <!-- Base de datos -->
+  <script src='../js/dataVolunteer.js'></script>
+  <!-- archivos JS
+  <script src="../js/appFotos.js"></script> -->
+  <script src="../js/appFotosv1.js"></script>
+  <script src="../js/datafa.js"></script>
+  <script src="../js/appfa.js"></script>
+ 
+  <script type="text/javascript" src="../js/app-tweet.js"></script>
+  </body>
+
+</html>
